@@ -64,6 +64,8 @@ export interface SiteConfig {
   photos: PhotoItem[];
 }
 
+const BASE = import.meta.env.BASE_URL || './';
+
 export const siteConfig: SiteConfig = {
   couple: {
     sender: "Furkan",
@@ -122,20 +124,20 @@ export const siteConfig: SiteConfig = {
       id: "song-1",
       title: "Gönül Yarası",
       artist: "Hüsnü Arkan & Cem Adrian",
-      src: "/music/husnu-arkan-gonul-yarasi.mp3",
+      src: `${BASE}music/husnu-arkan-gonul-yarasi.mp3`,
     },
     {
       id: "song-2",
       title: "Dans Et",
       artist: "Hayko Cepkin",
-      src: "/music/hayko-cepkin-dans-et.mp3",
+      src: `${BASE}music/hayko-cepkin-dans-et.mp3`,
     },
   ],
 
   photos: [
     {
       id: "photo-1",
-      src: "/images/FY5_2620.JPG",
+      src: `${BASE}images/FY5_2620.JPG`,
       alt: "Furkan & Mehtap",
       caption: "Gözlerinin değdiği her an, ömrümün en aydınlık sabahı.",
       date: "Özel Anlarımız",
@@ -144,7 +146,7 @@ export const siteConfig: SiteConfig = {
     },
     {
       id: "photo-2",
-      src: "/images/FY5_2630.JPG",
+      src: `${BASE}images/FY5_2630.JPG`,
       alt: "Furkan & Mehtap",
       caption: "Yüzündeki tebessüm, hayatımın en huzurlu sığınağı.",
       date: "Birlikte Güzel",
@@ -152,7 +154,7 @@ export const siteConfig: SiteConfig = {
     },
     {
       id: "photo-3",
-      src: "/images/FY5_2642.JPG",
+      src: `${BASE}images/FY5_2642.JPG`,
       alt: "Furkan & Mehtap",
       caption: "Zaman senin yanında duruyor gibi zarif ve dingin.",
       date: "Ebedi Sevda",
@@ -161,7 +163,7 @@ export const siteConfig: SiteConfig = {
     },
     {
       id: "photo-4",
-      src: "/images/FY5_2647.JPG",
+      src: `${BASE}images/FY5_2647.JPG`,
       alt: "Furkan & Mehtap",
       caption: "Aynı gökyüzüne seninle bakmaktan daha güzel ne olabilir?",
       date: "Birlikte Bir Ömür",
@@ -169,7 +171,7 @@ export const siteConfig: SiteConfig = {
     },
     {
       id: "photo-5",
-      src: "/images/FY5_2828.JPG",
+      src: `${BASE}images/FY5_2828.JPG`,
       alt: "Furkan & Mehtap",
       caption: "Birlikte yürüdüğümüz her yol, çiçek açan bir bahar bahçesi.",
       date: "Ömrümün Baharı",
@@ -178,7 +180,7 @@ export const siteConfig: SiteConfig = {
     },
     {
       id: "photo-6",
-      src: "/images/FY5_2844.JPG",
+      src: `${BASE}images/FY5_2844.JPG`,
       alt: "Furkan & Mehtap",
       caption: "Sen benim dualarımın yeryüzündeki en asil karşılığısın.",
       date: "Aşkla",
@@ -186,7 +188,7 @@ export const siteConfig: SiteConfig = {
     },
     {
       id: "photo-7",
-      src: "/images/IMG-20220614-WA0033.jpg",
+      src: `${BASE}images/IMG-20220614-WA0033.jpg`,
       alt: "Furkan & Mehtap Anı",
       caption: "Haziranın ilk sıcak rüzgarları ve senin sıcacık elin.",
       date: "Haziran 2022",
@@ -194,7 +196,7 @@ export const siteConfig: SiteConfig = {
     },
     {
       id: "photo-8",
-      src: "/images/IMG-20220614-WA0034.jpg",
+      src: `${BASE}images/IMG-20220614-WA0034.jpg`,
       alt: "Furkan & Mehtap Anı",
       caption: "Birlikte attığımız her kahkaha kalbime işlenen bir nota.",
       date: "Haziran 2022",
@@ -202,7 +204,7 @@ export const siteConfig: SiteConfig = {
     },
     {
       id: "photo-9",
-      src: "/images/IMG-20220614-WA0049.jpg",
+      src: `${BASE}images/IMG-20220614-WA0049.jpg`,
       alt: "Furkan & Mehtap Anı",
       caption: "Göz göze geldiğimizde tüm dünya sessizleşir.",
       date: "Yaz Anıları",
@@ -211,7 +213,7 @@ export const siteConfig: SiteConfig = {
     },
     {
       id: "photo-10",
-      src: "/images/IMG-20220809-WA0006.jpg",
+      src: `${BASE}images/IMG-20220809-WA0006.jpg`,
       alt: "Furkan & Mehtap Anı",
       caption: "Ağustos akşamlarının serinliği ve senin varlığının huzuru.",
       date: "Ağustos 2022",
@@ -219,7 +221,7 @@ export const siteConfig: SiteConfig = {
     },
     {
       id: "photo-11",
-      src: "/images/IMG-20220812-WA0017.jpg",
+      src: `${BASE}images/IMG-20220812-WA0017.jpg`,
       alt: "Furkan & Mehtap Anı",
       caption: "Yollar, şehirler değişir ama senin yanın hep evim.",
       date: "Ağustos 2022",
@@ -227,7 +229,7 @@ export const siteConfig: SiteConfig = {
     },
     {
       id: "photo-12",
-      src: "/images/IMG-20220830-WA0019.jpg",
+      src: `${BASE}images/IMG-20220830-WA0019.jpg`,
       alt: "Furkan & Mehtap Anı",
       caption: "Her yeni güne senin adınla uyanmanın şükrüyle...",
       date: "Ağustos 2022",
@@ -236,7 +238,7 @@ export const siteConfig: SiteConfig = {
     },
     {
       id: "photo-13",
-      src: "/images/IMG-20220927-WA0020.jpg",
+      src: `${BASE}images/IMG-20220927-WA0020.jpg`,
       alt: "Furkan & Mehtap Anı",
       caption: "Sonbaharın gelişini bile güzelleştiren o zarif tebessüm.",
       date: "Eylül 2022",
@@ -244,7 +246,7 @@ export const siteConfig: SiteConfig = {
     },
     {
       id: "photo-14",
-      src: "/images/IMG-20221022-WA0027.jpg",
+      src: `${BASE}images/IMG-20221022-WA0027.jpg`,
       alt: "Furkan & Mehtap Anı",
       caption: "Ekim rüzgarları eserken elini tutmanın güveni.",
       date: "Ekim 2022",
@@ -252,7 +254,7 @@ export const siteConfig: SiteConfig = {
     },
     {
       id: "photo-15",
-      src: "/images/IMG-20221030-WA0026.jpg",
+      src: `${BASE}images/IMG-20221030-WA0026.jpg`,
       alt: "Furkan & Mehtap Anı",
       caption: "Bir doğum gününün ertesinde, nice güzel yılların müjdesi.",
       date: "Ekim 2022",
@@ -260,7 +262,7 @@ export const siteConfig: SiteConfig = {
     },
     {
       id: "photo-16",
-      src: "/images/IMG-20230226-WA0016.jpg",
+      src: `${BASE}images/IMG-20230226-WA0016.jpg`,
       alt: "Furkan & Mehtap Anı",
       caption: "Kışın soğuğunda bile kalbimi ısıtan tek güneşsin.",
       date: "Şubat 2023",
@@ -268,7 +270,7 @@ export const siteConfig: SiteConfig = {
     },
     {
       id: "photo-17",
-      src: "/images/IMG-20230408-WA0022.jpg",
+      src: `${BASE}images/IMG-20230408-WA0022.jpg`,
       alt: "Furkan & Mehtap Anı",
       caption: "Nisan laleleri gibi taptaze ve saf...",
       date: "Nisan 2023",
@@ -276,7 +278,7 @@ export const siteConfig: SiteConfig = {
     },
     {
       id: "photo-18",
-      src: "/images/IMG-20230408-WA0037.jpg",
+      src: `${BASE}images/IMG-20230408-WA0037.jpg`,
       alt: "Furkan & Mehtap Anı",
       caption: "Baharı getiren çiçekler değil, senin bana bakan gözlerin.",
       date: "Nisan 2023",
@@ -285,7 +287,7 @@ export const siteConfig: SiteConfig = {
     },
     {
       id: "photo-19",
-      src: "/images/IMG-20230408-WA0056.jpg",
+      src: `${BASE}images/IMG-20230408-WA0056.jpg`,
       alt: "Furkan & Mehtap Anı",
       caption: "Masum bir bakış, sonsuz bir sevgi.",
       date: "Nisan 2023",
@@ -293,7 +295,7 @@ export const siteConfig: SiteConfig = {
     },
     {
       id: "photo-20",
-      src: "/images/IMG-20230408-WA0057.jpg",
+      src: `${BASE}images/IMG-20230408-WA0057.jpg`,
       alt: "Furkan & Mehtap Anı",
       caption: "Birlikte kurduğumuz hayallerin her biri birer çiçek oldu.",
       date: "Nisan 2023",
@@ -301,7 +303,7 @@ export const siteConfig: SiteConfig = {
     },
     {
       id: "photo-21",
-      src: "/images/IMG-20230409-WA0017.jpg",
+      src: `${BASE}images/IMG-20230409-WA0017.jpg`,
       alt: "Furkan & Mehtap Anı",
       caption: "Yan yana geçen her an ömrüme ömür katıyor.",
       date: "Nisan 2023",
@@ -309,7 +311,7 @@ export const siteConfig: SiteConfig = {
     },
     {
       id: "photo-22",
-      src: "/images/IMG-20230409-WA0019.jpg",
+      src: `${BASE}images/IMG-20230409-WA0019.jpg`,
       alt: "Furkan & Mehtap Anı",
       caption: "İyi ki varsın, iyi ki yanımdasın sevgilim.",
       date: "Nisan 2023",
