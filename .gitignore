@@ -3,22 +3,24 @@ logs
 *.log
 npm-debug.log*
 yarn-debug.log*
-yarn-error.log*
 pnpm-debug.log*
-lerna-debug.log*
 
 node_modules
 dist
 dist-ssr
 *.local
 
-# Editor directories and files
+# Editor directories
 .vscode/*
 !.vscode/extensions.json
 .idea
 .DS_Store
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
+
+# Local batch helpers
+*.bat
+yukle.js
+
+# Root redundant raw media files (active ones are in public/)
+/*.JPG
+/*.jpg
+/*.mp3
