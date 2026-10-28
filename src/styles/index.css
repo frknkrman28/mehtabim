@@ -1,0 +1,124 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+    color: #3b3531;
+    background-color: #FAF7F2;
+  }
+
+  ::selection {
+    background-color: #F8D8C3;
+    color: #943044;
+  }
+}
+
+/* Paper Texture and Grain */
+.paper-texture {
+  background-color: #FFFDF9;
+  background-image: 
+    radial-gradient(#e5dfd5 0.75px, transparent 0.75px),
+    radial-gradient(#e5dfd5 0.75px, #FFFDF9 0.75px);
+  background-size: 30px 30px;
+  background-position: 0 0, 15px 15px;
+}
+
+/* Subtle Sunbeam effect */
+.sunbeam {
+  background: radial-gradient(
+    ellipse 80% 50% at 50% -20%,
+    rgba(255, 248, 220, 0.45),
+    rgba(255, 235, 205, 0.15) 50%,
+    transparent 80%
+  );
+  pointer-events: none;
+}
+
+/* Glassmorphism for romantic UI elements */
+.glass-card {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.85);
+  box-shadow: 0 10px 30px -10px rgba(184, 74, 94, 0.08), 0 4px 6px -2px rgba(0, 0, 0, 0.02);
+}
+
+.glass-pill {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(240, 220, 220, 0.6);
+  box-shadow: 0 4px 15px rgba(200, 100, 120, 0.08);
+}
+
+/* Polaroid Card Effect */
+.polaroid-card {
+  background: #ffffff;
+  padding: 12px 12px 36px 12px;
+  border-radius: 4px;
+  box-shadow: 
+    0 1px 3px rgba(0, 0, 0, 0.05),
+    0 10px 25px -5px rgba(180, 130, 140, 0.15);
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.polaroid-card:hover {
+  transform: translateY(-6px) rotate(0.5deg) scale(1.01);
+  box-shadow: 
+    0 20px 35px -5px rgba(180, 130, 140, 0.22),
+    0 0 15px rgba(220, 150, 160, 0.1);
+}
+
+/* Editorial Serif & Cursive Enhancements */
+.font-editorial {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+}
+
+.font-script {
+  font-family: 'Allura', cursive;
+}
+
+/* Gold Gradient Text */
+.text-gold-gradient {
+  background: linear-gradient(135deg, #B8860B 0%, #D4AF37 40%, #E5C378 70%, #AA8423 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-rose-gradient {
+  background: linear-gradient(135deg, #943044 0%, #CE6B7D 50%, #B84A5E 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #FAF7F2;
+}
+::-webkit-scrollbar-thumb {
+  background: #E8D59A;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #D4AF37;
+}
+
+/* Floating animation utilities */
+@keyframes floatGentle {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(1.5deg);
+  }
+}
+
+.animate-gentle-float {
+  animation: floatGentle 6s ease-in-out infinite;
+}
